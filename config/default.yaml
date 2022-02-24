@@ -1,0 +1,53 @@
+seeds:
+  use_seeds: True
+  id: 42
+data:
+  train_dir: ../data_train
+  test_dir: ../data_test
+  validation_dir: ../data_val
+  random_partition: False
+  data_rate: 1.0
+  train_rate: 0.8
+  test_rate: 0.1
+  valid_rate: 0.1
+  imu_freq: 100.0
+  sample_freq: 20
+augment:
+  feat_acc_sigma: 0.0001
+  feat_gyr_sigma: 0.00001
+  add_bias_noise: True
+  accel_bias_range: 0.1
+  gyro_bias_range: 0.002
+  add_gravity_noise: True
+  gravity_noise_theta_range: 5 #degree
+model:
+  model_name: resnet_lstm
+  model_yaml: './config/resnet_lstm.yaml'
+  pred_velocity: False
+
+train:
+  out_dir: ./output/
+  use_pretrain_model: False
+  use_multi_gpu: False
+  batch_size: 32
+  epochs: 201
+  start_cov_epochs: 2000
+  n_workers: 4
+  seq_len: 10
+  predict_start: 0
+  predict_end: 10
+  optimizer:
+    learning_rate: 0.0001
+    method: Adam
+    weight_decay: 0.0
+  scheduler:
+    factor: 0.1
+    patience: 10
+val:
+  batch_size: 1024
+test:
+  out_dir: ./output/test
+  batch_size: 1024
+schemes:
+  train: True  # training
+  test: True   # testing

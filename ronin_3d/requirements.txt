@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+h5py
+numpy-quaternion
+matplotlib
+tensorboardX
+numba
+plyfile
+tqdm
+scikit-learn

@@ -1,0 +1,11 @@
+model_param:
+  input_dim: 6
+  output_dim: 3
+  past_time: 0.0
+  window_time: 1.0
+  future_time: 0.0
+  layer_sizes: [ 2, 2, 2, 2 ]
+  lstm_size: 256
+  lstm_layers: 1
+  lstm_dropout: 0.0
+

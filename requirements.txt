@@ -1,0 +1,11 @@
+torch
+numpy
+matplotlib
+pandas
+scipy
+tqdm
+progressbar2
+coloredlogs
+tensorboard
+pyyaml
+tables
