@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 
 ## Our Dataset
-You can download our dataset from any of the following address:
+You can download our dataset from any of the following addresses:
   
 - [drive.google.com](https://drive.google.com/file/d/1HfuZYnSdeCiFsqkP57Jn9i_y22kpQ7xp/view)  
 - [pan.baidu.com](https://pan.baidu.com/s/1wj5YeMah2N7Olka7MoeJEg) (password: y9dg)
@@ -48,6 +48,11 @@ Data
 |   |--...
 |--Sense_INS_Data.md     // The format description of SenseINS.csv
 ```
+## Pre-trained model
+You can download our pre-trained model trained on our dataset from any of the following addresses:
+  
+- [drive.google.com](https://drive.google.com/file/d/1BsnJCL1alqCT6HHoBKZ3sx6zSMd_MgDE/view?usp=sharing)  
+- [pan.baidu.com](https://pan.baidu.com/s/1ya3hzBHaDBLwrvkP8L6glw (password: d8mm))
 
 ## Training or Testing on SenseINS data
 
